@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="author" content="Zabludovskiy Grigoriy ☄" />
+	<meta name="keywords" content="info box, info box plug-in" />
+	<meta name="description" content="info box, info box plug-in" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	<link rel="apple-touch-icon" sizes="57x57" href="icons/apple-touch-icon-57x57.png?v=9BB5vx4pEb"/>
+	<link rel="apple-touch-icon" sizes="60x60" href="icons/apple-touch-icon-60x60.png?v=9BB5vx4pEb"/>
+	<link rel="apple-touch-icon" sizes="72x72" href="icons/apple-touch-icon-72x72.png?v=9BB5vx4pEb"/>
+	<link rel="apple-touch-icon" sizes="76x76" href="icons/apple-touch-icon-76x76.png?v=9BB5vx4pEb"/>
+	<link rel="apple-touch-icon" sizes="114x114" href="icons/apple-touch-icon-114x114.png?v=9BB5vx4pEb"/>
+	<link rel="apple-touch-icon" sizes="120x120" href="icons/apple-touch-icon-120x120.png?v=9BB5vx4pEb"/>
+	<link rel="apple-touch-icon" sizes="144x144" href="icons/apple-touch-icon-144x144.png?v=9BB5vx4pEb"/>
+	<link rel="apple-touch-icon" sizes="152x152" href="icons/apple-touch-icon-152x152.png?v=9BB5vx4pEb"/>
+	<link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon-180x180.png?v=9BB5vx4pEb"/>
+	<link rel="icon" type="image/png" href="icons/favicon-32x32.png?v=9BB5vx4pEb" sizes="32x32"/>
+	<link rel="icon" type="image/png" href="icons/favicon-194x194.png?v=9BB5vx4pEb" sizes="194x194"/>
+	<link rel="icon" type="image/png" href="icons/favicon-96x96.png?v=9BB5vx4pEb" sizes="96x96"/>
+	<link rel="icon" type="image/png" href="icons/android-chrome-192x192.png?v=9BB5vx4pEb" sizes="192x192"/>
+	<link rel="icon" type="image/png" href="icons/favicon-16x16.png?v=9BB5vx4pEb" sizes="16x16"/>
+	<link rel="manifest" href="icons/manifest.json?v=9BB5vx4pEb"/>
+	<link rel="mask-icon" href="icons/safari-pinned-tab.svg?v=9BB5vx4pEb" color="#00b6d1"/>
+	<link rel="shortcut icon" href="icons/favicon.ico?v=9BB5vx4pEb"/>
+	<meta name="msapplication-TileColor" content="#da532c"/>
+	<meta name="msapplication-TileImage" content="icons/mstile-144x144.png?v=9BB5vx4pEb"/>
+	<meta name="msapplication-config" content="icons/browserconfig.xml?v=9BB5vx4pEb"/>
+	<meta name="theme-color" content="#00b6d1"/>
+
+	<title>Info Box v1.0</title>
+
+	<link rel="stylesheet" href="info_box.css" />
+
+	<!--[if lt IE 9]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script>window.jQuery || document.write('<script src="js/jquery-2.1.4.min.js"><\/script>');</script>
+
+	<script src="JSON-js-master/json2.js"></script>
+
+	<!-- jQuery Info Box Plug-In -->
+	<script src="jquery.info_box_v_1_0.js"></script>
+
+	<script>
+		$.noConflict();
+	</script>
+
+	<script> // jQuery Info Box Plug-In Options
+		jQuery(document).ready(function($) {
+
+			$(document).infoBox({
+
+				// Theme color: red, green, blue; Default: orange; Type: string;
+				themeStyle: 'red',
+
+				// Animation duration: 300 (Minimum: 1); Default: 300; Type: number;
+				expandInterval: 500,
+
+				// Easing animation effect: swing, easeInOutBack, easeOutBounce; Default: easeOutBounce; Type: string;
+				easing: 'easeOutBounce',
+
+				// Shadow style: light, dark; Default: none; Type: string;
+				shadow: 'dark'
+
+			});
+
+		});
+	</script>
+
+</head>
+
+<body>
+
+<header class="custom">
+	Info Box Plug-In (Version 1.0)&nbsp;&nbsp;&nbsp;<small style=" float: right; padding: 2px 0;">custom:&nbsp;&nbsp;&nbsp;themes | colors | effects | duration</small>
+</header>
+
+<main>
+
+		<!-- Info Box Plug-In (Version 1.0) -->
+		<div class="info_box info_box--background lte_ie_7--info_box animated rollIn custom_position">
+			<header class="info_box__hero">Hero image container</header>
+			<main class="info_box__content">
+				<h1 class="info_box__heading info_box--theme_color"></h1>
+				<figure class="info_box__description_container">
+					<div class="js_info_box__description--content_height">
+						<p class="info_box__description"></p>
+						<p class="info_box__description_note"></p>
+					</div>
+				</figure>
+				<figcaption>
+					<p class="info_box__details info_box--theme_color">
+						<span class="info_box__details__text">show details</span>
+					</p>
+				</figcaption>
+			</main>
+			<footer class="info_box__footer">
+				<div class="info_box__navigation_container info_box__navigation_container--buttons info_box__navigation_container--buttons_previous">
+					<div class="info_box__navigation info_box__navigation--arrow info_box__navigation--previous_arrow info_box__navigation--theme_bg">
+						<div>&#x00AB;</div>
+					</div>
+					<div class="info_box__navigation info_box__navigation--text info_box__navigation--previous_text info_box__navigation--theme_bg">
+						Prev
+					</div>
+					<div class="clear"></div>
+				</div>
+				<div class="info_box__navigation_container info_box__navigation_container--buttons info_box__navigation_container--buttons_next">
+					<div class="info_box__navigation info_box__navigation--text info_box__navigation--next_text info_box__navigation--theme_bg">
+						Next
+					</div>
+					<div class="info_box__navigation info_box__navigation--arrow info_box__navigation--next_arrow info_box__navigation--theme_bg">
+						<div>&#x00BB;</div>
+					</div>
+					<div class="clear"></div>
+				</div>
+				<div class="info_box__navigation_container info_box__navigation_container--action_button">
+					<a class="info_box__navigation_action_button_link" href="#" target="_blank">
+						<div class="info_box__navigation info_box__navigation--text info_box__navigation--next_text info_box__navigation--text_action_button info_box__navigation--theme_bg info_box--theme_color">
+							Find a Store
+						</div>
+						<div class="info_box__navigation info_box__navigation--arrow info_box__navigation--next_arrow info_box__navigation--next_action_arrow info_box__navigation--theme_bg info_box--theme_color">
+							<!--[if lte IE 7]>
+								<div>&#x203A;</div>
+							<![endif]-->
+							<div class="lte_ie_7--hidden">&#x25BA;</div>
+						</div>
+						<div class="clear"></div>
+					</a>
+				</div>
+				<div class="clear"></div>
+			</footer>
+		</div>
+		<!-- end info_box -->
+		<!--[if lte IE 7]>
+			<style type="text/css">
+				.info_box__navigation_container--buttons,
+				 .info_box__details__text {
+					scrollbar-face-color: expression(runtimeStyle.scrollbarFaceColor = '#fff',
+						onmouseover = function() {this.className += ' lte_ie_7--hover'},
+						onmouseout = function() {this.className = this.className.replace(/ lte_ie_7--hover/g, '')}
+					);
+				}
+
+				.lte_ie_7--info_box {
+					width: 312px;
+				}
+
+				.lte_ie_7--hidden {
+					display: none;
+				}
+			</style>
+		<![endif]-->
+		<!--[if lte IE 9]>
+			<style type="text/css">
+				div.info_box__navigation_container--buttons:hover *, div.info_box__navigation_container--buttons.lte_ie_7--hover * {
+					color: white;
+					text-shadow: 1px 1px 2px #5D5D5D;
+					behavior: url("ie_pie/PIE.htc");
+				}
+			</style>
+		<![endif]-->
+		<script> // Responsive Navigation
+			jQuery(document).ready(function($) {
+
+				function adjustNavigtion() {
+
+					if ($(window).width() <= 400) { $('div.info_box').addClass('rwd_400') }
+
+					else { $('div.info_box').removeClass('rwd_400') }
+
+				}
+
+				adjustNavigtion();
+
+				$(window).resize(function() {
+
+					adjustNavigtion();
+
+				});
+
+			});
+		</script>
+		<!-- end Info Box Plug-In (Version 1.0) -->
+
+</main>
+
+<footer class="custom">
+	UIXninja 2015 ☄
+</footer>
+
+</body>
+
+</html>
