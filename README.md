@@ -1,4 +1,4 @@
-# Info Box Plug-In Version 1.0
+# Info Box Plug-in Version 1.0
 
 ## Convenient HTML5 component for advertisements.
 
@@ -10,10 +10,10 @@ Include the components below somewhere in the `<head>` section.
 ### jQuery Library:
 ```<script src="js/jquery-2.1.4.min.js"></script>``` or connect from any available CDN
 
-### jQuery Plug-In:
+### jQuery Plug-in:
 ```<script src="js/jquery.info_box_v_1_0.js"></script>```
 
-### Plug-In Initialization:
+### Plug-in Initialization:
 ```
 <script>
 	jQuery(document).ready(function($) {
@@ -32,7 +32,7 @@ Include the components below somewhere in the `<head>` section.
 </script>
 ```
 
-### Plug-In Options:
+### Plug-in Options:
 
 Theme color: red, green, blue; Default: orange; Type: string;
 
